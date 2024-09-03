@@ -1,6 +1,6 @@
 module "cdc_etl" {
   count                            = local.enable_cdc_etl_pipeline ? 1 : 0
-  source                           = "git::git@github.com:Vetted/certa-infra.git//terraform/modules/anytime_deployment?ref=v6.1.0"
+  source                           = "git::git@github.com:Vetted/certa-infra.git//terraform/modules/anytime_deployment?ref=v6.1.1"
   availability_zone                = local.availability_zone
   environment                      = local.environment
   region                           = local.region
